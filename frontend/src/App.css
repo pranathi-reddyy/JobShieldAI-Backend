@@ -1,0 +1,175 @@
+/* ==========================================================================
+   1. GLOBAL STYLES & BACKGROUND
+   ========================================================================== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e3a8a); /* Smooth Dark Blue Gradient */
+  min-height: 100vh;
+  color: #334155;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* ==========================================================================
+   2. MAIN INTERFACE INTERACTION CARD
+   ========================================================================== */
+.card {
+  width: 100%;
+  max-width: 850px;
+  background: #ffffff; /* Clean white card layout */
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  color: #1e3a8a; /* Deep navy blue branding title */
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.subtitle {
+  text-align: center;
+  color: #64748b;
+  margin-bottom: 35px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Input text blocks */
+textarea {
+  width: 100%;
+  min-height: 220px;
+  padding: 18px;
+  border-radius: 12px;
+  border: 2px solid #e2e8f0;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f8fafc;
+  color: #0f172a;
+  transition: border-color 0.2s ease;
+  resize: vertical;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: #ffffff;
+}
+
+/* Main action processing buttons */
+button {
+  width: 100%;
+  padding: 16px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 12px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+  background: #1d4ed8;
+}
+
+button:disabled {
+  background-color: #94a3b8;
+  cursor: not-allowed;
+}
+
+/* ==========================================================================
+   3. REPORT CARDS & COLOR OUTPUT PATTERNS
+   ========================================================================== */
+.result-card {
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.result-card h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+/* 3-Tier Metric Color States */
+.genuine {
+  color: #22c55e !important; /* Vivid Green for verified listings */
+}
+
+.suspicious {
+  color: #f59e0b !important; /* Warning Amber Alert */
+}
+
+.fake {
+  color: #ef4444 !important; /* High-risk Red alert */
+}
+
+/* Risk Bar Track Architecture */
+.risk-bar {
+  width: 100%;
+  height: 14px;
+  background: #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 15px 0 25px;
+}
+
+/* Dynamic slider wrapper formatting rules */
+.risk-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.risk-fill.genuine {
+  background: linear-gradient(90deg, #22c55e, #16a34a) !important;
+}
+
+.risk-fill.suspicious {
+  background: linear-gradient(90deg, #f59e0b, #d97706) !important;
+}
+
+.risk-fill.fake {
+  background: linear-gradient(90deg, #ef4444, #dc2626) !important;
+}
+
+/* Analysis Listing format */
+.result-card h3 {
+  color: #1e293b;
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+li {
+  color: #475569;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 8px;
+}
