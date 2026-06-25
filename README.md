@@ -7,7 +7,11 @@ The application analyzes job descriptions using Machine Learning and Natural Lan
 * ✅ Genuine
 * ⚠️ Suspicious
 * ❌ Fake
+
+
 The Site is live at "job-shield-ai-backend.vercel.app"
+
+
 It is designed to identify common recruitment scam patterns, provide confidence scores, and help job seekers make safer career decisions.
 
 Tech Stack
